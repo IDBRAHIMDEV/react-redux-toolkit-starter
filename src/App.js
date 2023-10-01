@@ -1,12 +1,12 @@
 import './App.css';
-import Counter from './components/Counter';
+import Posts from './components/posts/Posts';
 
 function App() {
   return (
     <>
     <div className="container mt-4">
         <h1>React Redux Toolkit</h1>
-        <Counter />
+        <Posts />
     </div>
     </>
   );
