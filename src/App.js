@@ -5,7 +5,7 @@ function App() {
   return (
     <>
     <div className="container mt-4">
-        <h1>React Redux Toolkit</h1>
+        <h1>Learn React Redux</h1>
         <Posts />
     </div>
     </>

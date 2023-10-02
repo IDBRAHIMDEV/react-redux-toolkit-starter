@@ -1,6 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
+    post: {
+      title: '',
+      image: '',
+      body: ''
+    },
     posts: [
         {
             image: "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/TZLXpJ9ORhmBgJUs1v5A",
@@ -28,7 +33,7 @@ const initialState = {
             id: 8
           },
           {
-            title: "learn javascriprt and ecmascript",
+            title: "learn javascriprt",
             image: "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/7zQdVPcjSnGj7TCSIF5P",
             body: "javascript is the most popular language in the world",
             id: 9
@@ -51,9 +56,36 @@ const initialState = {
 const postsSlice = createSlice({
     name: 'posts',
     initialState,
-    reducer: {}
-})
+    reducers: {
+      reset: (state) => {
+        state.post =  {
+          title: '',
+          image: '',
+          body: ''
+        }
+      },
+      setPost: (state, action) => {
+        state.post[action.payload.name] = action.payload.value
+      },
+      allPosts: (state) => {
+        return state.posts
+      },
+      persistPost: (state) => {
+        const newPost = {
+          ...state.post,
+          id: nanoid()
+        }
+        console.log(newPost)
+        state.posts.unshift(newPost)
+      },
+      deletePost: (state, action) => {
+        return {
+          ...state,
+          posts: state.posts.filter(post => post.id !== action.payload)
+        }
+      }
+    }
+});
 
-export const allPosts = state => state.articles.posts
-
+export const { reset, setPost, allPosts, persistPost, deletePost } = postsSlice.actions;
 export default postsSlice.reducer
