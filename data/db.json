@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "title": "Learn Symfony 6",
+      "image": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/otcfFBbQSsuFqhl5W2mF",
+      "body": "learn how to create backend",
+      "id": 8
+    },
+    {
+      "title": "Learn React",
+      "image": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/ndgpEj1YRAqrlS0gNZBb",
+      "body": "ReactJS Hooks et Redux Toolkit",
+      "id": 9
+    },
+    {
+      "title": "Advanced wordpress",
+      "image": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/sCDzADRwTkCwQyttfMlx",
+      "body": "Créez des sites Web complexes",
+      "id": 10
+    },
+    {
+      "title": "Django 4 MySQL",
+      "image": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/qq7I5yr4QvqfVAMKQG1K",
+      "body": "Learn How to Create Secure API with Django",
+      "id": 11
+    },
+    {
+      "title": "NodeJS  MongoDB",
+      "image": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/nSksEHOHQLSteJPjCg9t",
+      "body": "Backend avec ExpressJS",
+      "id": 12
+    },
+    {
+      "title": "Learn Spring boot",
+      "image": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/4jgHzQESLa2F5uccFGc2",
+      "body": "RestFul API Web service",
+      "id": 13
+    }
+  ]
+}
